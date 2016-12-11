@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics.Contracts;
 
 namespace BankAccountCustomer
 {
@@ -14,7 +15,7 @@ namespace BankAccountCustomer
         {
             Customer c1 = new Customer();
 
-            int customer_id = 123;
+            int customer_id = -123;
             int account = 124;           
             double amountToMove = 5000.123;
 
@@ -25,9 +26,8 @@ namespace BankAccountCustomer
             Console.WriteLine("<------------------------------->");
 
             c1.makeReguest(customer_id, amountToMove, account);
-            c1.makeReguest(customer_id, 1235, account);
-            c1.makeReguest(customer_id, 51651, account);
-
+            c1.makeReguest(customer_id, amountToMove, account);
+            c1.makeReguest(customer_id, amountToMove, account);
 
             while (true)
             {

@@ -9,3 +9,8 @@ C:\Users\redrose\Documents\Visual Studio 2015\Projects\BankAccountCustomer\BankA
 C:\Users\redrose\Desktop\C#_contracts\ContractBasedDevelopment-2_cba\BankAccountCustomer\bin\Debug\BankAccountCustomer.exe.config
 C:\Users\redrose\Desktop\C#_contracts\ContractBasedDevelopment-2_cba\BankAccountCustomer\obj\Debug\BankAccountCustomer.exe
 C:\Users\redrose\Desktop\C#_contracts\ContractBasedDevelopment-2_cba\BankAccountCustomer\obj\Debug\BankAccountCustomer.pdb
+C:\Users\redrose\Desktop\C#_contracts\ContractBasedDevelopment-2_cba\BankAccountCustomer\bin\Debug\BankAccountCustomer.exe
+C:\Users\redrose\Desktop\C#_contracts\ContractBasedDevelopment-2_cba\BankAccountCustomer\bin\Debug\BankAccountCustomer.pdb
+C:\Users\redrose\Desktop\C#_contracts\ContractBasedDevelopment-2_cba\BankAccountCustomer\obj\Debug\Decl\BankAccountCustomer.exe
+C:\Users\redrose\Desktop\C#_contracts\ContractBasedDevelopment-2_cba\BankAccountCustomer\obj\Debug\Decl\BankAccountCustomer.pdb
+C:\Users\redrose\Desktop\C#_contracts\ContractBasedDevelopment-2_cba\BankAccountCustomer\obj\Debug\CodeContractAnalysisRun.log

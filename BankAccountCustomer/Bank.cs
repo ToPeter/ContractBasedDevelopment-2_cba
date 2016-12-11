@@ -5,41 +5,31 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics.Contracts;
 
 namespace BankAccountCustomer
 {
-    // banks comm with cust atm !!!!
-
-
     class Bank
     {
-
         public ArrayList accountList;
         public ArrayList accountCredits;
         public ArrayList accountDebits;
         public ArrayList accountCredits1;
         public ArrayList accountDebits1;
         public bool alreadyDone = false;
-
         Account.Movement temp_am_move = new Account.Movement();
-
         public Bank()
         {
         }
-
-
         private void initializeAccounts()
-        {
-            
+        {            
             if (!alreadyDone)
             {
                 accountList = new ArrayList();
 
                 //Double booking standard
-
                 accountCredits = new ArrayList();
                 accountDebits = new ArrayList();
-
                 accountCredits1 = new ArrayList();
                 accountDebits1 = new ArrayList();
 
@@ -51,10 +41,7 @@ namespace BankAccountCustomer
                 accountList.Add(receiverAccount);
 
                 alreadyDone = true;
-            } 
-
-           
-            
+            }             
         }
 
         public void move(double amount, int source, int target)
@@ -67,10 +54,9 @@ namespace BankAccountCustomer
                 temp_am_move.Amount = amount;
                 if (temp_obj.number == source)
                 {
-                   
+                  
                    temp_obj.balance -= amount;
-                    
-
+  
                     if (amount > 0)
                     {
                         temp_am_move.IsCreddit = true;                                            
@@ -102,7 +88,6 @@ namespace BankAccountCustomer
                 }              
             }
             
-
             makeStatement(source, target);
         }
                                                       // target
@@ -134,10 +119,8 @@ namespace BankAccountCustomer
                         Console.WriteLine("Sender debitList------>" + temp_obj.accountDebits[l - 1].ToString());
                     }
                     Console.WriteLine("<---------->");
-                }
-            
+                }            
             }
-
         }
     }
 }

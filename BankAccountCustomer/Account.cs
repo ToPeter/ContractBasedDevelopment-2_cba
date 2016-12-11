@@ -4,12 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics.Contracts;
 
 namespace BankAccountCustomer
 {
     class Account
     {
-
         public int number;
         public double balance;
         public ArrayList accountCredits;
@@ -21,23 +21,15 @@ namespace BankAccountCustomer
             this.balance = balance;
             this.accountCredits = accountCredits;
             this.accountDebits = accountDebits;
-
         }
-
 
         public Account()
         {
         }
 
-
-
-
         public class Movement
-        {
-            // private Account parent;
+        {         
             public DateTime date;
-          //  public double amount;
-
 
             public Movement()
             {
@@ -65,42 +57,6 @@ namespace BankAccountCustomer
                 string dateAmountBuild = myDate + "|" + amount;
                 return dateAmountBuild;
             }
-
-
-            //private DateTime _date;
-            //public DateTime Date
-            //{
-            //    get { return _date; }
-            //    set { _date = value; }
-            //}
-            //public static DateTime Now { get; }
-
-
-
-
-
-            //    public Movement(DateTime date, double amount)
-            //    {
-            //        this.date = date;
-            //        this.amount = amount;
-            //    }
-            //}
-            //private DateTime _date;
-            //public DateTime Date
-            //{
-            //    get { return _date; }
-            //    set { _date = value; }
-            //}
-            //public static DateTime Now { get; }
-
-            //public void makeMovement()
-            //{
-            //    date
-            //    amount
-            //    Movement m1 = new Movement();
-            //}
-
-
         }
     }
 }
