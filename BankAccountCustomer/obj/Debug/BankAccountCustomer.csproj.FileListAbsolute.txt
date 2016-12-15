@@ -14,3 +14,4 @@ C:\Users\redrose\Desktop\C#_contracts\ContractBasedDevelopment-2_cba\BankAccount
 C:\Users\redrose\Desktop\C#_contracts\ContractBasedDevelopment-2_cba\BankAccountCustomer\obj\Debug\Decl\BankAccountCustomer.exe
 C:\Users\redrose\Desktop\C#_contracts\ContractBasedDevelopment-2_cba\BankAccountCustomer\obj\Debug\Decl\BankAccountCustomer.pdb
 C:\Users\redrose\Desktop\C#_contracts\ContractBasedDevelopment-2_cba\BankAccountCustomer\obj\Debug\CodeContractAnalysisRun.log
+C:\Users\redrose\Desktop\C#_contracts\ContractBasedDevelopment-2_cba\BankAccountCustomer\obj\Debug\BankAccountCustomer.csprojResolveAssemblyReference.cache

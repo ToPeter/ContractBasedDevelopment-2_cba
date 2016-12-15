@@ -13,9 +13,12 @@ namespace BankAccountCustomer
       
         static void Main(string[] args)
         {
+            
             Customer c1 = new Customer();
+            Contract.Requires(c1 != null);
 
-            int customer_id = -123;
+
+            int customer_id = 123;
             int account = 124;           
             double amountToMove = 5000.123;
 

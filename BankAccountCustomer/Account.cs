@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics.Contracts;
 
+
 namespace BankAccountCustomer
 {
     class Account
@@ -17,6 +18,11 @@ namespace BankAccountCustomer
 
         public Account(int number, double balance, ArrayList accountCredits, ArrayList accountDebits)
         {
+
+            Contract.Requires(number > 0);
+            Contract.Requires(accountCredits != null);
+            Contract.Requires(accountDebits != null);
+
             this.number = number;
             this.balance = balance;
             this.accountCredits = accountCredits;
@@ -52,7 +58,7 @@ namespace BankAccountCustomer
             public string buildMOvementRecord()
             {
                 date = DateTime.Now;
-                string myDate = date.ToString("dd-MM-yyyy HH:mm s");
+                string myDate = date.ToString("dd-MM-yyyy HH:mm ");
                 string amount = Amount.ToString();
                 string dateAmountBuild = myDate + "|" + amount;
                 return dateAmountBuild;

@@ -26,7 +26,7 @@ namespace BankAccountCustomer
             if (!alreadyDone)
             {
                 accountList = new ArrayList();
-
+                
                 //Double booking standard
                 accountCredits = new ArrayList();
                 accountDebits = new ArrayList();
@@ -39,6 +39,7 @@ namespace BankAccountCustomer
 
                 accountList.Add(senderAccount);
                 accountList.Add(receiverAccount);
+                Contract.Requires(accountList != null);
 
                 alreadyDone = true;
             }             
@@ -47,14 +48,16 @@ namespace BankAccountCustomer
         public void move(double amount, int source, int target)
         {
             initializeAccounts();
+            bool match = false;
             
             for (int k = 1; k <= accountList.Count; k++)
             {
                 Account temp_obj = (Account)accountList[k-1];
+                Contract.Requires(temp_obj != null);
                 temp_am_move.Amount = amount;
                 if (temp_obj.number == source)
                 {
-                  
+                    match = true;
                    temp_obj.balance -= amount;
   
                     if (amount > 0)
@@ -87,8 +90,7 @@ namespace BankAccountCustomer
                         Console.WriteLine("<---------->");
                 }              
             }
-            
-            makeStatement(source, target);
+            if (match) makeStatement(source, target);
         }
                                                       // target
         private void makeStatement(int customer_id, int number)
@@ -118,7 +120,7 @@ namespace BankAccountCustomer
                     {
                         Console.WriteLine("Sender debitList------>" + temp_obj.accountDebits[l - 1].ToString());
                     }
-                    Console.WriteLine("<---------->");
+                    Console.WriteLine("<-----END OF TRANSACTION----->");
                 }            
             }
         }
