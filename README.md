@@ -8,11 +8,11 @@ LDM.
 
 ## Demo
 
-Applying Contract Contract to check if the customerId value is positive:
+Applying Code Contract to check if the customerId value is positive:
 ![](https://github.com/ToPeter/ContractBasedDevelopment-2_cba/blob/master/pic/Screenshot_2.png "Solution")
 
 Let's set the value of customerId to negative.
-After building the project Contract points to the error.
+After building the project Code Contract points to the error.
 ![](https://github.com/ToPeter/ContractBasedDevelopment-2_cba/blob/master/pic/Screenshot_1.png "Problem")
 
 
