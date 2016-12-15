@@ -6,5 +6,5 @@ application should use Code Contracts and Design by ContractTM principles
 to enforce the restrictions of double bookkeeping and the restrictions of the
 LDM.
 
-![Alt text](ContractBasedDevelopment-2_cba/pic/to/Screenshot_1.png?raw=true "Title")
+![Alt text](https://github.com/ToPeter/ContractBasedDevelopment-2_cba/blob/master/pic/Screenshot_1.png "Title")
 
