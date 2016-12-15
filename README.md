@@ -16,4 +16,6 @@ After building the project Code Contract points to the error.
 ![](https://github.com/ToPeter/ContractBasedDevelopment-2_cba/blob/master/pic/Screenshot_1.png "Problem")
 
 
+## Short Textual Description
 
+The code contract improves the testability of the project and can detect if preconditions are not met even before you run the project. This can ensure that the preconditions are met before you test the rest of the method, so you don't make stupid calls in the testing classes.
